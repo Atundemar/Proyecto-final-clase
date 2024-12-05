@@ -167,7 +167,7 @@ public class PlayerController : MonoBehaviour
         // Si está en el suelo y el input horizontal es diferente de 0, pasamos a la animación de correr
         if (isGrounded && horizontalInput != 0)
         {
-            ChangeAnimation(isShooting ? Constants.PLAYER_RUN_SHOOT_ANIMATION : Constants.PLAYER_RUN_ANIMATION);
+            ChangeAnimation(isShooting ? Constants.PLAYER_ATTACK_ANIMATION : Constants.PLAYER_RUN_ANIMATION);
         }
         // Si está en el suelo y el nput horizontal es 0, pasamos a idle
         else if (isGrounded && horizontalInput == 0) ChangeAnimation(Constants.PLAYER_IDLE_ANIMATION);
@@ -265,7 +265,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded || jumpInAirCounter < jumpInAirAllowed)
         {
             if (jumpInAirCounter == 0) ChangeAnimation(Constants.PLAYER_JUMP_ANIMATION);
-            else ChangeAnimation(Constants.PLAYER_DOUBLE_JUMP_ANIMATION);
+            else ChangeAnimation(Constants.PLAYER_DOUBLE_JUMP);
             // Resetamos la velocidad en el eje Y
             rb2d.linearVelocityY = 0f;
             // Aplicamos la fuerza de salto
@@ -274,7 +274,7 @@ public class PlayerController : MonoBehaviour
             // Si al saltar está en el suelo, hacmos la animación de salto simple
             if (isGrounded) ChangeAnimation(Constants.PLAYER_JUMP_ANIMATION);
             // Si no lo está significará que estamos en el aire y por ende, ejecutamos el doble salto
-            else ChangeAnimation(Constants.PLAYER_DOUBLE_JUMP_ANIMATION);
+            else ChangeAnimation(Constants.PLAYER_DOUBLE_JUMP);
 
             if (!isGrounded) jumpInAirCounter++;
         }
