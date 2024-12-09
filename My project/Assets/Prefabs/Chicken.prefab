@@ -82,7 +82,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.19, y: 0.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -245,7 +245,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5621877495791798677}
-  waypoints: []
+  waypoints:
+  - {fileID: 5803502197101514202}
+  - {fileID: 2725911536669358820}
   moveSpeed: 0.5
   rotateSpeed: 360
   canRotate: 0

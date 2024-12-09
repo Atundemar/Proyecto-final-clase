@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class EnemyCrab : Enemy
+public class EnemyChicken : Enemy
     {
     [Header("References")]
     // Guardaremos todos los waypoints
@@ -106,6 +106,4 @@ public class EnemyCrab : Enemy
     private void UpdateNextWaypoint(){
         currentWaypointIndex = (currentWaypointIndex +1) % waypoints.Length;
     }
-
-    
 }
