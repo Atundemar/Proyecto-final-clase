@@ -151,6 +151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6870216285477931326}
+  - component: {fileID: 2087577650125045862}
   - component: {fileID: 3823003142296431295}
   - component: {fileID: 3403155172520480441}
   m_Layer: 0
@@ -176,6 +177,20 @@ Transform:
   - {fileID: 920482848782535009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2087577650125045862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202912478209627842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e6be8a5914453429c99306c0085a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpParticles: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!58 &3823003142296431295
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -206,7 +221,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

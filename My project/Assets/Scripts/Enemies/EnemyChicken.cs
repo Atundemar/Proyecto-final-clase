@@ -1,8 +1,8 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 
-public class EnemyChicken : Enemy
-    {
+public class EnemyChicken : MonoBehaviour
+{
     [Header("References")]
     // Guardaremos todos los waypoints
     [SerializeField] private Transform[] waypoints;

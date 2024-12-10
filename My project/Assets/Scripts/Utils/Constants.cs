@@ -7,5 +7,9 @@ public class Constants : MonoBehaviour
     public const string PLAYER_JUMP_ANIMATION = "Player-jump";
     public const string PLAYER_DEATH_ANIMATION = "Player-death";
     public const string PLAYER_ATTACK_ANIMATION = "Player-Attack";
-    public static readonly string PLAYER_DOUBLE_JUMP = "Player-double-jump";
+    public const string PLAYER_DOUBLE_JUMP = "Player-double-jump";
+
+    // --------------------------
+
+    public const string ANIM_CHEST_OPEN = "Chest-open";
 }
